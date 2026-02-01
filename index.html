@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Deniz & Merve - İlk Yılımız</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        :root { --p: #f0426e; }
+        body { background-color: #f8f6f6 !important; font-family: 'Be Vietnam Pro', sans-serif; margin: 0; scroll-behavior: smooth; }
+        .script { font-family: 'Great Vibes', cursive !important; }
+        .hero-box { height: 500px; position: relative; border-radius: 0 0 3rem 3rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #221015; }
+        .img-card { width: 100%; height: 280px; object-fit: cover; border-radius: 1.5rem; transition: 0.4s; background: #fff; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .img-card:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(240,66,110,0.3); }
+        .cork { background: #fcf9f2; border: 2px solid #e6dbde; border-radius: 2rem; padding: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; background-image: radial-gradient(#d1b8b0 1px, transparent 1px); background-size: 20px 20px; }
+        .note-paper { background: white; padding: 1.5rem; border-radius: 2px; box-shadow: 5px 5px 15px rgba(0,0,0,0.08); position: relative; transform: rotate(-1deg); }
+        .pin { color: var(--p); position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-size: 2rem; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2)); }
+    </style>
+</head>
+<body>
+
+    <header class="bg-white/80 backdrop-blur-md px-6 py-4 flex justify-between items-center sticky top-0 z-[1000] border-b border-gray-100">
+        <div class="flex items-center gap-2 font-bold text-xl text-[#f0426e]">
+            <span>❤</span> Deniz & Merve
+        </div>
+        <button onclick="boom()" class="bg-[#f0426e] text-white px-6 py-2 rounded-full font-bold shadow-lg hover:bg-[#d6355d] transition active:scale-95">Seni Seviyorum!</button>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pb-20">
+        
+        <div class="hero-box mb-16">
+            <img src="https://i.ibb.co/CpnFj0c8/Whats-App-mage-2026-02-01-at-22-48-24.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-10">
+                <h1 class="script text-white text-7xl md:text-[120px] mb-2">Merve & Deniz</h1>
+                <p class="text-white/90 tracking-[6px] uppercase text-sm font-bold">26 Şubat 2025 • Sonsuzluğun İlk Yılı</p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-24 bg-white p-8 rounded-[3rem] shadow-sm">
+            <div class="relative">
+                <img src="https://i.ibb.co/yBfDjCmf/Whats-App-mage-2026-02-01-at-22-48-26-1.jpg" class="rounded-[2rem] shadow-2xl rotate-2 w-full h-[450px] object-cover border-8 border-white">
+                <div class="absolute -bottom-4 -right-4 bg-[#f0426e] text-white p-6 rounded-2xl shadow-xl">
+                    <p class="script text-3xl">365 Gün</p>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h2 class="script text-[#f0426e] text-6xl">Bizim Hikayemiz</h2>
+                <div class="text-gray-600 text-lg leading-relaxed space-y-4">
+                    <p>Tam bir yıl önce bugün, 26 Şubat'ta hayatımın en güzel yolculuğuna seninle başladım.</p>
+                    <p>Hayatımdaki var olduğun için yeni günlere daha mutlu kalkıyorum.</p>
+                    <p>Bu site, seninle biriktirdiğimiz binlerce güzel anın sadece küçük bir parçası.</p>
+                    <p class="font-bold text-[#f0426e]">İyi ki benimlesin, iyi ki biz olduk...</p>
+                </div>
+                <div class="flex gap-4 pt-4">
+                    <span class="bg-pink-100 text-[#f0426e] px-4 py-2 rounded-full text-sm font-bold">#26Şubat</span>
+                    <span class="bg-pink-100 text-[#f0426e] px-4 py-2 rounded-full text-sm font-bold">#DenizMerve</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mb-12">
+            <h2 class="script text-[#f0426e] text-5xl mb-2">Anılar Bahçesi</h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-24">
+            <img src="https://i.ibb.co/2Y33j5yG/Whats-App-mage-2026-02-01-at-22-48-26-2.jpg" class="img-card">
+            <img src="https://i.ibb.co/FLmsfx1Q/Whats-App-mage-2026-02-01-at-22-48-26-3.jpg" class="img-card">
+            <img src="https://i.ibb.co/TD5hCwv2/Whats-App-mage-2026-02-01-at-22-48-26-4.jpg" class="img-card">
+            <img src="https://i.ibb.co/wNRgJ83b/Whats-App-mage-2026-02-01-at-22-48-26.jpg" class="img-card">
+            <img src="https://i.ibb.co/N2V1MTyj/Whats-App-mage-2026-02-01-at-22-48-27-1.jpg" class="img-card">
+            <img src="https://i.ibb.co/XxyMTFpM/Whats-App-mage-2026-02-01-at-22-48-27-2.jpg" class="img-card">
+            <img src="https://i.ibb.co/FqVzZHRj/Whats-App-mage-2026-02-01-at-22-48-27-3.jpg" class="img-card">
+            <img src="https://i.ibb.co/21Q0YLFS/Whats-App-mage-2026-02-01-at-22-48-27-4.jpg" class="img-card">
+        </div>
+
+        <div class="cork mb-24">
+            <div class="note-paper">
+                <span class="pin">📌</span>
+                <p class="script text-3xl text-[#f0426e] mb-2">Canım Sevgilim,</p>
+                <p class="text-sm text-gray-700 leading-relaxed mb-4">Seninle her anımız, kalbimin en özel köşesinde saklı.</p>
+                <img src="https://i.ibb.co/MyrS7ZTC/Whats-App-mage-2026-02-01-at-22-48-27-5.jpg" class="w-full h-48 object-cover rounded shadow-inner">
+            </div>
+
+            <div class="note-paper rotate-2 bg-[#f0426e] text-white flex flex-col items-center justify-center text-center p-6">
+                <p class="script text-6xl mb-4">Merve</p>
+                <p class="font-bold tracking-[4px] text-xs">SEN BENİM DÜNYAMSIN</p>
+                <div class="mt-6 text-4xl animate-pulse">❤</div>
+            </div>
+
+            <div class="note-paper -rotate-2">
+                <span class="pin">📌</span>
+                <p class="script text-3xl text-[#f0426e] mb-4 text-center">Deniz'den Not</p>
+                <p class="italic text-gray-600 text-center mb-4">"Dünyadaki en güzel manzara, senin bana o sıcacık gülüşün."</p>
+                <img src="https://i.ibb.co/9kw23g5D/Whats-App-mage-2026-02-01-at-22-48-27.jpg" class="w-full h-48 object-cover rounded">
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-20 text-center bg-white">
+        <p class="script text-[#f0426e] text-6xl">Sonsuza Dek Biz</p>
+        <p class="text-gray-400 tracking-[3px] text-xs mt-4 uppercase">26 Şubat 2025'ten beri aşkla...</p>
+    </footer>
+
+    <script>
+        function boom() {
+            confetti({ particleCount: 200, spread: 80, origin: { y: 0.6 }, colors: ['#f0426e', '#ffffff', '#ffb3c6'] });
+        }
+        window.onload = () => { setTimeout(boom, 1000); };
+    </script>
+</body>
+</html>
